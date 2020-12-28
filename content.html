@@ -1,0 +1,189 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body id="main" class=main>
+
+  <div class="container">
+
+  <header class="header">
+
+ <h1 id="title" class=title>
+  Customer Service Satisfaction Survey 
+  </h1>
+
+  <h6 id="description" class=description>
+  <i> Thank you for taking the time to help us improve our customer service </i> 
+  </h6>
+  </header>
+
+<form id="survey-form" class=survey-form>
+ <div class="form-group"> 
+  <label for "name" 
+         id="name-label"><p>Name</p></label>
+    <input type=text 
+           id="name" 
+           placeholder="Name"
+           class=form-control
+           required>
+  
+  </div>
+<hr>
+ <div class="form-group">
+  <label 
+         for "email" 
+         id="email-label"><p>Email</p></label>
+    <input 
+           type=email 
+           id="email" 
+           placeholder="Email"
+           class="form-control"
+           required>
+  
+  </div>
+ <hr>
+  <div class="form-group">
+  <label 
+         for "numbers" 
+         id="number-label"><p>Age</p></label>
+    <input 
+           type=number 
+           id="number" 
+           placeholder="Age" 
+           class=form-control
+           min=1 max=110>
+  
+  </div>
+<hr>
+  <div class="form-group">  
+  <p> How was our service? </p>
+
+  <label 
+         for "dropdown" 
+         id="dropdown-label">
+     <select 
+             id="dropdown" 
+             name="select"
+             class=dropdown>
+       <option value="excellent">Excellent</option>
+       <option value="good">Good</option>
+       <option value="adverage">Adverage</option>
+       <option value="needs improvement">Needs improvement</option>
+       <option value="unsatisfactory">Unsatisfactory</option>
+    </select>
+   </label>
+  </div>
+<hr> 
+ <div class="form-group">   
+    <p>Would you recommend us to a friend?</p>
+    <label>
+      <input 
+             id="yes" 
+             type=radio
+             value="yes"
+             class=radio-control
+             name="recYesNoMaybe">Yes
+    </label>
+  <br> <!-- is there a better method than these line breaks? -->
+   <label>
+     <input
+            id="no"
+            type=radio
+            value="no"
+            class=radio-control
+            name="recYesNoMaybe">No
+   </label>
+  <br>
+   <label>
+     <input
+            id="maybe"
+            type=radio
+            value="maybe"
+            class=radio-control
+            name="recYesNoMaybe">Maybe
+     </div>   
+<hr>   
+   <div class="form-group">
+     <p>Where did you find out about our company?</p>
+     
+     <select 
+             id="find-dropdown"
+             class=dropdown>
+       <option value="online ads">Online Ads</option>
+       <option value="yelp">Yelp</option>
+       <option value="walk in">Walk in</option>
+       <option value="radio">Radio</option>
+       <option value="tv">TV</option>
+       <option value="fliers">Fliers</option>
+       <option value="friends or family">Friends or family</option>
+       <option value="other">Other</option>
+     </select>
+   </div>
+<hr>   
+   <div class="form-group">
+     <p>What would you like to see improved?</p>
+     
+     <label for "responsiveness">
+       <input id="responsiveness"
+              type=checkbox
+              value="responsiveness"
+              name="improvement">Responsiveness
+     </label>
+    <br>
+     <label for "professionalism">
+       <input id="professionalism"
+              type=checkbox
+              value="professionalism"
+              name="improvement">Professionalism
+     </label>
+    <br> 
+     <label for "knowledgeability-assistance">
+       <input id="knowledgeability-assistance"
+              type=checkbox
+              value="knowlegeability-assistance"
+              name="improvement">Knowledgeability/Assistance
+     </label>
+    <br> 
+     <label for "call-wait-time">
+       <input id="call-wait-time"
+              type=checkbox
+              value="call-wait-time"
+              name="improvement">Call Wait Time
+     </label>
+    <br> 
+     <label for "communication">
+       <input id="communication"
+              type=checkbox
+              value="communication"
+              name="improvement">Communication
+     </label>
+    <br> 
+     <label for "other">
+       <input id="other"
+              type=checkbox
+              value="other"
+              name="improvement">Other
+     </label>
+   </div>
+<hr>   
+   <div class="form-group">
+     <p>Any comments or suggestions?</p>
+     
+     <textarea
+               id="comments"
+               class="input-textarea"
+               name="comment"
+               placeholder="Enter your comments here...">
+     </textarea>
+   <!--placeholder not working?*it works after deleting some blank text that seems to load with the site* -->
+   </div>
+   
+   <div class="form-group">
+     <button
+             id="submit"
+             type="submit"
+             class=submit>
+       <b>Submit</b>
+     </button>
+   </div>
+        </form> 
+    </div>
+  </body>
